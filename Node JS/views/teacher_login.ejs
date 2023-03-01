@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="forms-container">
+                <div class="signin">
+                    <form action="/loginteach" method="post">
+                        <% if(serverError){ %>
+                            <div align-center class="validate"> 
+                                 <%=serverError%>
+                            </div>
+                        <% } %>
+
+                        <h2 class="title">Sign In</h2>
+
+                        <div class="input-field">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" name="teacherid" id="teacherid" placeholder="Username" required> 
+                        </div>
+
+                        <div class="input-field">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" name="password" id="password" placeholder="Password" required>
+                        </div>
+
+                        <input type="submit" value="Login" class="btn">
+                    </form>
+                </div>
+            </div>
+            <img src="images/TS-PGECET-Result-2021.png" class="image" alt="">
+        </div>
+    </body>
+</html>
